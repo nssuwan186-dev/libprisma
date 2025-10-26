@@ -5,7 +5,7 @@ from telegram import Update, Bot
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
 # --- ตั้งค่าตรงนี้ ---
-TELEGRAM_TOKEN = "8227507211:AAH7pkYGXSG8IFl9bd5qvaA9TLL8C8KcXhM"
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 ALLOWED_CHAT_ID = 8144545476
 GEMINI_API_KEY = os.getenv("GOOGLE_API_KEY")
 
